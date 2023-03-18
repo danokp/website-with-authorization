@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "website"
+version = "0.1.0"
+description = ""
+authors = ["Daniil <danokp@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.2.3"
+flask-login = "^0.6.2"
+flask-sqlalchemy = "^3.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
