@@ -34,7 +34,7 @@ def login():
 
     return render_template(
         'login.html',
-        text='Testing'
+        user=current_user
     )
 
 
@@ -75,4 +75,7 @@ def sign_up():
             login_user(user, remember=True)
             flash('Account created!', category='success')
             return redirect(url_for('views.home'))
-    return render_template('sign_up.html')
+    return render_template(
+        'sign_up.html',
+        user=current_user
+    )
